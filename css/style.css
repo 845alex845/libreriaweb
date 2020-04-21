@@ -1,0 +1,927 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Titilium Web', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-weight: 600 !important;
+    font-size: 30px !important;
+    color: #b90f20;
+}
+
+h2 {
+    color: #fff;
+    font-weight: 600 !important;
+    font-size: 40px !important;
+}
+
+h3 {
+    font-weight: 600 !important;
+}
+
+h4 {
+    font-size: 20px !important;
+    color: #b90f20;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    margin-bottom: 0 !important;
+}
+
+i {
+    font-size: 12px !important;
+}
+
+sup {
+    border: 1px solid transparent;
+    border-radius: 50%;
+    color: #b90f20;
+    background: #fff;
+    padding: 1px 6px;
+    left: -3px;
+}
+
+.ver-mas {
+    text-align: center;
+}
+
+.logo {
+    width: 200px;
+    background: #f2f2f2;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+
+/*NAVBAR*/
+
+.navbar {
+    height: 80px;
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 4px 10px 0 rgba(0, 0, 0, .2);
+}
+
+.nav-brand {
+    font-weight: 500;
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+}
+
+.nav-item i {
+    font-size: 19px !important;
+}
+
+.avatar {
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+}
+
+.bg-navbar {
+    /* background: #001f3f; */
+    background: #b90f20;
+}
+
+
+/*MAIN*/
+
+main {
+    padding: 0px !important;
+}
+
+.contenido {
+    height: 580px;
+    /* background: #E9EBEE; */
+    padding: 70px;
+    background-image: url(../images/footer.png);
+    position: relative;
+    width: 100%;
+}
+
+
+/*flotante*/
+
+.flotante {
+    position: absolute;
+    top: -120px;
+    height: 190px;
+    width: 100%;
+    margin-left: -70px;
+    padding: 0px 15%;
+}
+
+.flotante .flotante-content {
+    background: #fff;
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    box-shadow: 3px 5px 8px 3px rgba(0, 0, 0, 0.2);
+    /*lados-altura-difumidado-grosor color*/
+}
+
+.item {
+    padding: 30px;
+}
+
+.item i {
+    font-size: 40px !important;
+    margin: 10px 0px;
+}
+
+.item h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.item h6 {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.item i:hover,
+h3:hover {
+    color: #b90f20;
+}
+
+
+/*PORTADA*/
+
+.contenedor {
+    height: 640px;
+    background: #636060;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-contenedor {
+    width: 100%;
+    display: flex;
+}
+
+.contenido-slider {
+    width: 100%;
+    height: 640px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    flex-shrink: 0;
+    padding: 35px;
+}
+
+.contenido-slider:nth-child(1) {
+    background-image: url(../images/portada5.jpg);
+    color: #fff;
+    align-items: flex-start;
+}
+
+.contenido-slider:nth-child(2) {
+    background-image: url(../images/portada2.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.contenido-slider:nth-child(3) {
+    background-image: url(../images/portada4.png);
+    background-position: center;
+    align-items: flex-end;
+    background-size: cover;
+}
+
+.contenido-slider:nth-child(4) {
+    background-image: url(../images/portada5.jpg);
+    color: #fff;
+    align-items: flex-start;
+}
+
+.contenedor img {
+    height: 400px;
+    width: 600px;
+}
+
+
+/*POPULARES*/
+
+.titulo {
+    margin-top: 24px;
+}
+
+.galeria-libro {
+    height: 310px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.item-libro {
+    width: 18%;
+    margin: 1px 3px;
+    height: 290px;
+}
+
+.detalle-libro {
+    width: 20%;
+    height: 100%;
+    border: 1px solid transparent;
+    margin: 5px 15px;
+    border-radius: 5px;
+    padding: 15px 4px;
+    background: #fff;
+    box-shadow: 1px 4px 10px 0 rgba(0, 0, 0, .2);
+}
+
+.libro-portada {
+    width: 100%;
+    height: 70%;
+    padding: 0px 12px;
+    /**/
+    position: relative;
+    overflow: hidden;
+}
+
+.libro-portada>.option-libro {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 4px 10px;
+    z-index: 1;
+    width: inherit;
+    text-align: center;
+    background: transparent;
+    display: none;
+}
+
+.option-libro>a {
+    width: 22.5%;
+    display: inline-block;
+    border: 0.2px solid transparent;
+    border-radius: 50%;
+    background: #b90f20;
+    color: #fff;
+    font-weight: 400;
+}
+
+.option-libro>a:hover {
+    color: #b90f20;
+    background: #fff;
+}
+
+.img-libro {
+    height: 100%;
+    width: 100%;
+    border: 0.8px solid transparent;
+    box-shadow: 1px 4px 10px 0 rgba(0, 0, 0, .2);
+    border-radius: 2px;
+    transition: all 0.8s;
+}
+
+.img-libro:hover {
+    transform: scale(0.9);
+}
+
+.libro-descripcion {
+    margin-top: 8px;
+    height: 30%;
+}
+
+.libro-descripcion i {
+    color: #FFB944;
+}
+
+
+/*OFERTAS*/
+
+.oferta {
+    height: 890px;
+}
+
+
+/**/
+
+.libro {
+    background-image: url(../images/libros3.jpg);
+    background-attachment: fixed;
+    height: 450px;
+    /*con efecto*/
+}
+
+
+/*CONTACT*/
+
+.contact {
+    background-image: url(../images/portada1.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    height: 450px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    background-size: cover;
+    /*con efecto*/
+}
+
+.contact .detalle-contact {
+    color: #fff;
+}
+
+.form-control {
+    width: 40% !important;
+}
+
+
+/*FOOTER*/
+
+footer {
+    height: 380px;
+    background-image: url(../images/footer.png);
+    background-position: center;
+    padding: 70px 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.lista {
+    list-style: none;
+}
+
+.lista li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+footer .form-control {
+    width: 100% !important;
+}
+
+footer .sub {
+    display: block;
+}
+
+.iconos i {
+    font-size: 25px !important;
+    margin: 0px 4px;
+    color: #000;
+}
+
+footer span {
+    font-size: 18px;
+    color: #b90f20;
+    font-weight: 600;
+}
+
+@media (min-width: 290px) and (max-width: 409.98px) {
+    /*NAVBAR*/
+    .navbar-nav {
+        background: #000000ea;
+    }
+    .logo {
+        width: 180px;
+    }
+    /*PORTADA*/
+    .contenedor {
+        height: 520px;
+    }
+    /**********MAIN*************/
+    /*POPULAR*/
+    .titulo {
+        padding: 0px 15px;
+    }
+    .titulo>h3 {
+        font-size: 24px;
+    }
+    .titulo>p {
+        font-size: 14px;
+    }
+    .libro-descripcion>h5 {
+        font-size: 12px !important;
+    }
+    .libro-descripcion>h6 {
+        font-size: 15px !important;
+    }
+    .popular {
+        height: 920px;
+        padding: 20px 5px 0px 5px;
+    }
+    .contenido-libro {
+        height: 93%;
+    }
+    .contenido-libro:nth-child( 1) {
+        height: 94% !important;
+    }
+    .galeria-libro {
+        height: 500px;
+        flex-wrap: wrap;
+    }
+    .detalle-libro {
+        width: 40%;
+        height: 47%;
+        margin: 7px 6px;
+    }
+    .libro-portada {
+        padding: 0px 13%;
+    }
+    .btn {
+        font-size: 14px !important;
+        padding: 4px 8px !important;
+    }
+    /*LIBROS*/
+    .libro {
+        height: 460px;
+        padding: 100px 10px;
+        text-align: center;
+    }
+    .libro h2 {
+        font-size: 35px !important;
+    }
+    .libro h4 {
+        margin: 30px 0px;
+        color: #fff;
+    }
+    /*OFERTA*/
+    .oferta {
+        height: 1180px;
+        padding: 40px 5px 0px 5px;
+    }
+    /*CONTACTO*/
+    .contact {
+        height: 460px;
+        padding: 100px 10px;
+        text-align: center;
+    }
+    .contact h2 {
+        font-size: 35px !important;
+    }
+    .contact h4 {
+        margin: 30px 0px;
+    }
+    /*FOOTER*/
+    footer {
+        padding: 30px 20px;
+    }
+    .content-footer {
+        text-align: center;
+    }
+}
+
+@media (min-width: 410px) and (max-width: 575.98px) {
+    .navbar-nav {
+        background: #000000ea;
+    }
+    /*PORTADA*/
+    .contenedor {
+        height: 520px;
+    }
+    /*POPULAR*/
+    .titulo {
+        padding: 0px 15px;
+    }
+    .titulo>h3 {
+        font-size: 30px;
+    }
+    .titulo>p {
+        font-size: 14px;
+    }
+    .libro-descripcion>h5 {
+        font-size: 12px !important;
+    }
+    .libro-descripcion>h6 {
+        font-size: 15px !important;
+    }
+    .popular {
+        height: 720px;
+        padding: 50px 5px 30px 5px;
+    }
+    .oferta {
+        height: 940px;
+        padding: 70px 10px 10px 10px;
+    }
+    .contenido-libro {
+        height: 93%;
+    }
+    .galeria-libro {
+        height: 230px;
+        flex-wrap: wrap;
+    }
+    .detalle-libro {
+        width: 28%;
+        margin: 10px 6px;
+    }
+    .libro-portada {
+        padding: 0px 13%;
+    }
+    /*LIBROS*/
+    .libro {
+        height: 460px;
+        padding: 100px 30px;
+        text-align: center;
+    }
+    .libro h2 {
+        font-size: 35px !important;
+    }
+    .libro h4 {
+        margin: 30px 0px;
+        color: #fff;
+    }
+    .btn {
+        font-size: 14px !important;
+        padding: 4px 8px !important;
+    }
+    /*CONTACTO*/
+    .contact {
+        height: 460px;
+        padding: 100px 20px;
+        text-align: center;
+    }
+    .contact h2 {
+        font-size: 40px !important;
+    }
+    .contact h4 {
+        margin: 30px 0px;
+    }
+    /*FOOTER*/
+    footer {
+        padding: 30px 20px;
+    }
+    .content-footer {
+        text-align: center;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar-nav {
+        background: #000000ea;
+    }
+    /*POPULAR*/
+    .titulo {
+        padding: 0px 15px;
+    }
+    h3 {
+        font-size: 35px !important;
+    }
+    .titulo>p {
+        font-size: 16px;
+    }
+    .libro-descripcion>h5 {
+        font-size: 14px !important;
+    }
+    .libro-descripcion>h6 {
+        font-size: 15px !important;
+    }
+    .popular {
+        height: 780px;
+        padding: 50px 5px 0px 5px;
+    }
+    /*LIBROS*/
+    .libro {
+        height: 460px;
+        padding: 100px 30px;
+        text-align: center;
+    }
+    .libro h2 {
+        font-size: 40px !important;
+    }
+    .libro h4 {
+        margin: 30px 0px;
+        color: #fff;
+    }
+    .btn {
+        font-size: 14px !important;
+        padding: 4px 8px !important;
+    }
+    /*CONTACTO*/
+    .contact {
+        height: 460px;
+        padding: 100px 20px;
+        text-align: center;
+    }
+    .contact h2 {
+        font-size: 45px !important;
+    }
+    .contact h4 {
+        margin: 30px 0px;
+    }
+    /*OFERTA*/
+    .oferta {
+        height: 1040px;
+        padding: 70px 30px 30px 30px;
+    }
+    .contenido-libro {
+        height: 89%;
+    }
+    .contenido-libro:nth-child( 1) {
+        height: 96%;
+    }
+    .galeria-libro {
+        height: 265px;
+        flex-wrap: wrap;
+    }
+    .detalle-libro {
+        width: 30%;
+        margin: 10px 5px;
+    }
+    .libro-portada {
+        padding: 0px 16%;
+    }
+    /*FOOTER*/
+    footer {
+        padding: 30px 20px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /*POPULAR*/
+    .flotante {
+        height: 150px;
+        top: -80px;
+    }
+    .item {
+        padding: 5px;
+    }
+    .item span i {
+        font-size: 30px !important;
+    }
+    .item h3 {
+        font-size: 20px !important;
+    }
+    .item h6 {
+        font-size: 13px !important;
+    }
+    .titulo {
+        padding: 0px 15px;
+    }
+    h3 {
+        font-size: 35px !important;
+    }
+    .titulo>p {
+        font-size: 16px;
+    }
+    .libro-descripcion>h5 {
+        font-size: 16px !important;
+    }
+    .libro-descripcion>h6 {
+        font-size: 15px !important;
+    }
+    .popular {
+        height: 790px;
+        padding: 70px 50px 30px 50px;
+    }
+    /*LIBRO*/
+    .libro {
+        padding: 85px 70px;
+    }
+    .libro h2 {
+        font-size: 40px !important;
+    }
+    .libro h4 {
+        margin: 30px 0px;
+        color: #fff;
+    }
+    .btn {
+        font-size: 14px !important;
+        padding: 4px 8px !important;
+    }
+    /*OFERTA*/
+    .oferta {
+        height: 1020px;
+        padding: 50px 40px 10px 40px;
+    }
+    .contenido-libro {
+        height: 94%;
+    }
+    .galeria-libro {
+        height: 270px;
+        flex-wrap: wrap;
+    }
+    .detalle-libro {
+        width: 25%;
+        margin: 10px 5px;
+    }
+    .libro-portada {
+        padding: 0px 17%;
+    }
+    /*CONTACTO*/
+    .contact {
+        height: 490px;
+        padding: 100px 20px;
+        text-align: center;
+    }
+    .contact h2 {
+        font-size: 45px !important;
+    }
+    .contact p {
+        font-size: 20px !important;
+        margin: 30px 5px;
+    }
+    /*FOOTER*/
+    .content-footer {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /*POPULAR*/
+    .flotante {
+        height: 170px;
+        top: -80px;
+    }
+    .item {
+        padding: 5px;
+    }
+    .item span i {
+        font-size: 32px !important;
+    }
+    .item h3 {
+        font-size: 22px !important;
+    }
+    .item h6 {
+        font-size: 15px !important;
+    }
+    .popular {
+        height: 530px;
+        padding: 100px 50px 10px 50px;
+    }
+    .titulo {
+        padding: 0px 15px;
+        margin-top: 5px;
+    }
+    h3 {
+        font-size: 35px !important;
+    }
+    .titulo>p {
+        font-size: 16px;
+    }
+    .libro-descripcion>h5 {
+        font-size: 16px !important;
+    }
+    .libro-descripcion>h6 {
+        font-size: 15px !important;
+    }
+    /*LIBRO*/
+    .libro h2 {
+        font-size: 45px !important;
+    }
+    .libro h4 {
+        margin: 30px 0px;
+        color: #fff;
+        font-size: 25px !important;
+    }
+    .btn {
+        font-size: 20px !important;
+        padding: 4px 5px !important;
+    }
+    .oferta {
+        height: 760px;
+        padding: 50px 40px 30px 40px;
+    }
+    .galeria-libro {
+        height: 280px;
+    }
+    .libro-portada {
+        padding: 0px 25px;
+    }
+    .libro-portada>.option-libro {
+        padding: 4px 15px !important;
+    }
+    .contenido-libro {
+        height: 89%;
+    }
+    .galeria-libro {
+        height: 270px;
+        flex-wrap: wrap;
+    }
+    .detalle-libro {
+        width: 18%;
+        margin: 5px 5px;
+    }
+    /*FOOTER*/
+    footer {
+        padding: 30px 20px;
+        height: 360px !important;
+    }
+    .content-footer {
+        display: flex;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    /*POPULAR*/
+    .popular {
+        height: 550px;
+        padding: 70px 50px 30px 50px;
+    }
+    .titulo,
+    .oferta h3 {
+        font-size: 35px !important;
+    }
+    .titulo>p {
+        font-size: 18px;
+    }
+    .libro-descripcion>h5 {
+        font-size: 19px !important;
+    }
+    .libro-descripcion>h6 {
+        font-size: 18px !important;
+    }
+    /*LIBRO*/
+    .libro h2 {
+        font-size: 45px !important;
+    }
+    .libro h4 {
+        margin: 30px 0px;
+        color: #fff;
+        font-size: 25px !important;
+    }
+    .btn {
+        font-size: 20px !important;
+        padding: 4px 5px !important;
+    }
+    .oferta {
+        height: 830px;
+        padding: 50px 40px 30px 40px;
+    }
+    .oferta p {
+        font-size: 20px !important;
+    }
+    .detalle-libro {
+        width: 17%;
+    }
+    .contenido-libro {
+        height: 90%;
+    }
+    .galeria-libro {
+        height: 300px;
+        flex-wrap: wrap;
+    }
+    .libro-portada {
+        padding: 0px 17%;
+    }
+    .libro-portada>.option-libro {
+        padding: 4px 18px !important;
+    }
+    /*FOOTER*/
+    footer {
+        padding: 30px 20px;
+        height: 360px !important;
+    }
+    .content-footer {
+        display: flex;
+    }
+}
+
+@media (min-width: 1400px) {
+    .ver-mas:nth-last-child(1) {
+        margin-top: 5px;
+    }
+    .popular {
+        height: 550px;
+        padding: 70px 50px 30px 50px;
+    }
+    .oferta {
+        height: 830px;
+        padding: 50px 40px 30px 40px;
+    }
+    .libro-portada {
+        padding: 0px 15%;
+    }
+    .libro-descripcion>h5 {
+        font-size: 20px !important;
+    }
+    .libro-descripcion>h6 {
+        font-size: 19px !important;
+    }
+    .detalle-libro {
+        width: 15%;
+    }
+    .galeria-libro {
+        height: 300px;
+        flex-wrap: wrap;
+    }
+    .contenido-libro {
+        height: 88%;
+    }
+    footer {
+        padding: 30px 20px;
+        height: 360px !important;
+    }
+    .content-footer {
+        display: flex;
+    }
+}
